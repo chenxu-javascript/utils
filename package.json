@@ -1,6 +1,6 @@
 {
   "name": "utils-common-fn",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "utils",
   "main": "dist/utils.js",
   "module": "dist/utils.es.ts",
@@ -19,9 +19,9 @@
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-terser": "^5.0.0",
     "rollup-plugin-typescript2": "^0.26.0",
-    "typescript": "^3.8.3"
+    "typescript": "^3.9.7"
   },
-  "author": "chenxu",
+  "author": "surexchen",
   "license": "ISC",
   "scripts": {
     "clean": "rm -rf dist",

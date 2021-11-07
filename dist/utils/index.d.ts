@@ -1,9 +1,10 @@
+import setValueByPath from "./setValueByPath";
 /**
  * 循环检测 达成条件 回调fn
  * @param {*} fn
  * @param {*} cod
  */
-declare const bsRunWhen: (fn: () => void, cod: () => any) => void;
+declare const bsRunWhen: (fn: (params?: any) => void, cod: () => any) => void;
 /**
  * 循环检测 cod 达成条件 await bsCheck(() => {})
  * @param {*} cod
@@ -32,7 +33,7 @@ declare const getValueByPath: (obj: any, path: string) => any;
  * @param {*} path 路径
  * @param {*} value 值
  */
-declare const setValueByPath: (obj: any, path: string, value: any) => any;
+declare const setObjectValueByPath: (obj: any, path: string, value: any) => any;
 /**
  * 是否为数组且数组长度>0
  * @param {*} arr
@@ -43,4 +44,4 @@ declare const isArray: (arr: any) => boolean;
  * @param {*} obj
  */
 declare const isObject: (obj: any) => boolean;
-export { isArray, isObject, bsWait, bsPromise, bsCheck, bsRunWhen, setValueByPath, getValueByPath };
+export { isArray, isObject, bsWait, bsPromise, bsCheck, bsRunWhen, setObjectValueByPath, getValueByPath, setValueByPath, };
